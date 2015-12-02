@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="background_all">#f3f3f3</color>
+    <color name="allTransparent">#00000000</color>
+    <color name="bigTransparent">#55000000</color>
+    <color name="text_blue">#5195d6</color>
+    <color name="text_blue1">#0486c1</color>
+    <color name="text_white">#fff</color>
+    <color name="div_title">#2367cc</color>
+    <color name="div">#e6e6e6</color>
+    <color name="div1">#e6e6e6</color>
+    <color name="div2">#c7ccd0</color>
+    <color name="title_color">#2871d5</color><!-- #008eff -->
+     <color name="gray1">#d8d8d8</color>
+     <color name="green">#47ab10</color>
+     <color name="gray555">#555555</color><!-- 太深了点 -->
+     <color name="white">#ffffff</color><!-- 太深了点 -->
+    
+    <color name="tab_textcolor_pressed">#008eff</color>
+    
+    <color name="tab_textcolor_normal">#808080</color>
+    
+    
+    <color name="common_btn_pressed">#eeeeee</color>
+    <color name="common_btn_normal">#ff9000</color>
+    
+    
+    <color name="item_line_color">#c8c7cc</color>
+    
+     <!-- 太深了点 -->
+    <color name="gray_lightly">#88BFBFBF</color>
+    
+    <!-- 文字的黑色 -->
+    <color name="text_black">#404040</color>
+    <!-- 灰色一点点的文字颜色 -->
+    <color name="text_lightly_black">#787776</color>
+    <!-- 橘色 -->
+    <color name="orange">#FF9A1D</color>
+    <!-- 西瓜红 -->
+    <color name="red_melon">#F15352</color>
+
+    <color name="province_line_border">#D0D0D0</color>
+
+    <color name="lightLightBlue">#3aa0ef</color>
+    <!-- 白色 -->
+    <color name="WHITE">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="color_ffffff">#ffffff</color>
+    <!-- 浅黑色 -->
+    <color name="color_252525">#252525</color>
+    <!-- 黑色 -->
+    <color name="color_0A0A0A">#0A0A0A</color>
+    <!-- 深蓝色 -->
+    <color name="color_192240">#192240</color>
+    <!-- 白色 -->
+    <color name="color_F7F7F6">#F7F7F6</color>
+    <!-- 深蓝色 -->
+    <color name="color_222F4F">#222F4F</color>
+    <!-- 浅白色 -->
+    <color name="color_E7E7E7">#E7E7E7</color>
+    <!-- 浅白色 -->
+    <color name="color_E4E4E4">#E4E4E4</color>
+    <!-- 白色 -->
+    <color name="color_FEFFFE">#FEFFFE</color>
+    <!-- 浅绿色 -->
+    <color name="color_65B252">#65B252</color>
+    <!-- 深绿色 -->
+    <color name="color_148910">#148910</color>
+    <!-- 浅蓝色 -->
+    <color name="color_7289BF">#7289BF</color>
+    <!-- 浅蓝色 -->
+    <color name="color_242A36">#242A36</color>
+    <!-- 浅红色 -->
+    <color name="color_DF4754">#DF4754</color>
+    <!-- 绿色 -->
+    <color name="color_7CB600">#7CB600</color>
+    <!-- 深灰色 -->
+    <color name="color_5e5e5e">#5e5e5e</color>
+    <!-- 深灰色 -->
+	<color name="color_666666">#666666</color>
+	<!-- 红色 -->
+	<color name="color_ff0000">#ff0000</color>
+	<!-- 浅灰色 -->
+	<color name="color_EDEDED">#EDEDED</color>
+	<!-- 黄色 -->
+	<color name="yellow">#fe9920</color>
+	<!-- 灰色 -->
+	<color name="gray">#a5a5a5</color>
+	<!-- 蓝色 -->
+	<color name="blue">#2498e2</color>
+	<color name="color_eff3f9">#eff3f9</color>
+	<color name="color_2871d5">#2871d5</color>
+	<color name="color_3366B8">#3366B8</color>
+	<color name="color_CACACA">#CACACA</color>
+	<color name="color_0072E9">#0072E9</color>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size15"
+        android:background="@drawable/dialog_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size5"
+            android:padding="@dimen/size10"
+            android:text="提示"
+            android:textColor="#f83"
+            android:textSize="@dimen/textSize22" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="#f83" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size13"
+            android:textColor="#777"
+            android:textSize="@dimen/textSize18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_orange"
+                android:paddingBottom="@dimen/size10"
+                android:paddingTop="@dimen/size10"
+                android:text="确定"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize18" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_orange"
+                android:paddingBottom="@dimen/size10"
+                android:paddingTop="@dimen/size10"
+                android:text="取消"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

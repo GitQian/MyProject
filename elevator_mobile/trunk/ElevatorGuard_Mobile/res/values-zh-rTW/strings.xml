@@ -1,0 +1,109 @@
+<resources>
+
+    <string name="app_name">e電梯</string>
+    <string name="press_again_to_exit">再按一次退出.</string>
+    <string name="userid_empty_alarm">帳號不能為空!</string>
+    <string name="pwd_empty_alarm">密碼不能為空!</string>
+    <string name="login_submit">登 錄</string>
+    <string name="network_unavailable">網絡狀態不好,請稍候重試</string>
+    <string name="http_request_error">服務器出錯了,請稍候重試</string>
+    <string name="http_parse_error">服務器返回數據出錯了,請稍後重試</string>
+    <string name="no_data">沒有記錄</string>
+    <string name="invaild_parms">發送參數出錯</string>
+    <string name="loading">加載中...</string>
+    <string name="login_success">登錄成功!</string>
+    <string name="login_fail">登錄失敗:</string>
+    <string name="abnormal_note">異常備註</string>
+    <string name="abnormal_note_submit">提交</string>
+    <string name="maintenance_time">維保時間</string>
+    <string name="maintenance_records">維保記錄</string>
+    <string name="lift_list">電梯列表</string>
+    <string name="info_center">消息</string>
+    <string name="brake">制動器</string>
+    <string name="maintenance_task">維保任務</string>
+    <string name="lift_detail">電梯詳情</string>
+    <string name="maintenance_detail">維保詳情</string>
+    <string name="maintenance_person">維保人員</string>
+    <string name="role_name_quality">質監局</string>
+    <string name="role_name_inspectorate">監察局</string>
+    <string name="role_name_maintenanceadmin">維保管理員</string>
+    <string name="role_name_maintenanceworkers">維保工人</string>
+    <string name="role_name_propertycompany">物業公司</string>
+   <!--  <string name="pull_to_refresh_tap_label" translatable="false">點擊刷新</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">下拉刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松開可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">數據刷新中</string>
+    <string name="pull_to_refresh_update_time_label" translatable="false">上次更新：</string>
+    <string name="pull_to_load_pull_label" translatable="false">上拉加載更多</string> -->
+    <string name="pull_to_load_release_label">松開立即加載</string>
+    <string name="pull_to_load_loading_label">正在加載</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失敗</string>
+    <string name="load_succeed">加載成功</string>
+    <string name="load_fail">加載失敗</string>
+    <string name="wuye_company">物業公司</string>
+    <string name="weibao_company">維保公司</string>
+    <string name="weibao_company_details">維保公司詳情</string>
+    <string name="wuye_company_details">物業公司詳情</string>
+    <string name="maintenance_task_status_nomaintenance">尚未維保</string>
+    <string name="maintenance_task_status_maintenanceed">維保完成</string>
+    <string name="maintenance_task_status_maintenanceextension">維保延期</string>
+    <string name="settings">設置</string>
+    <string name="username">用戶名 </string>
+    <string name="nikname">昵稱:</string>
+    <string name="gender">性别:</string>
+    <string name="cell_fhone_number">手機號:</string>
+    <string name="birthday ">生日:</string>
+    <string name="settings_tag">設置標簽</string>
+    <string name="login_out">退出登錄</string>
+    <string name="personal_information">個人信息</string>
+    <string name="no_nfc">沒有發現NFC設備</string>
+    <string name="error">錯誤</string>
+    <string name="alarm">提示</string>
+    <string name="nfc_disabled">NFC沒有啟用,請到設置界面啟用.</string>
+    <string name="no_bind_tag">沒有綁定標籤</string>
+    <string name="bind_tag_success">綁定成功</string>
+    <string name="bind_tag_fail">綁定失敗</string>
+    <string name="maintenance_content_non_compliance">維保內容不符合規定</string>
+    <string name="item_binded_tag">此維保內容已經綁定了其他的標籤</string>
+    <string name="tag_binded_item">此標籤已經綁定了其他的維保內容</string>
+    <string name="halfmonth_maintenance">半月維保</string>
+    <string name="quarter_maintenance">季度維保</string>
+    <string name="halfyear_maintenance">半年維保</string>
+    <string name="year_maintenance">年度维保</string>
+    <string name="weibaoitem_normal">正常</string>
+    <string name="weibaoitem_abnormal">異常</string>
+    <string name="cover_tag_alarm">此維保內容已綁定了其他的標籤,確定要覆蓋已綁定的標籤嗎?</string>
+    <string name="scan_tag_alarm_noitem">沒有對應的維保項!</string>
+    <string name="scan_tag_alarm_already">此維保項已被維保過!</string>
+    <string name="scan_tag_alarm_cover">確定覆蓋已掃描過標籤的維保項嗎?</string>
+    <string name="opeartion_success">操作成功!</string>
+    <string name="opeartion_fail">操作失敗!</string>
+    <string name="input_abnomal_text">請輸入異常備註信息</string>
+    <string name="no_done_maintenance_item">還有未完成的維保項!</string>
+    <string name="submit_maintenance_plan_alarm">確定要提交整個維保任務嗎?</string>
+    <string name="gender_male">男</string>
+	<string name="gender_female">女</string>
+	<string name="about_us">關於我們</string>
+	<string name="use_clauses">使用條款</string>
+	<string name="version_info">版本信息</string>
+	<string name="check_update">檢查更新</string>
+	<string name="version_update">版本更新</string>
+    <string name="new_version">已是最新版本無需更新</string>
+    <string name="tip_from_system">系統提示</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="version_update_alarm_title">版本升級到 %s</string>
+    <string name="downloading">正在下載...</string>
+    <string name="download_error">下載失敗!</string>
+    <string name="download_sucess">下載成功!</string>
+    <string name="download_cancel">下載取消!</string>
+    <string name="maintenance_task_no_start">當前日期不在計畫維保時間段內,不能進行維保!</string>
+    <string name="alarm_no_repeat_bind_tag">無需重複綁定當前標籤!</string>
+    <string name="enter_key_words">請輸入關鍵字</string>
+
+    
+    <string name="not_maintenance">尚未維保</string>
+    <string name="maintenance_finish">維保完成</string>
+    <string name="maintenance_delay">維保延期</string>   	
+</resources>

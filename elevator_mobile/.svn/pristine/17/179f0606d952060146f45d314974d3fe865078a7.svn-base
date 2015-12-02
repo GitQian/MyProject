@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chinacnit.elevatorguard.mobile.ui.view.CornerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvLgAlertDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tip_from_system"
+        android:textColor="@color/color_3366B8"
+        android:textSize="@dimen/eighteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvLgAlertDialogTitle"
+        android:background="@color/color_3366B8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLgAlertDialogTitle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvLgAlertDialogMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:minHeight="80dp"
+            android:padding="10dp"
+            android:text="版本更新"
+            android:textColor="@color/color_252525"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_CACACA" />
+
+        <LinearLayout
+            android:id="@+id/llLgAlertDialogBtnContain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnLgAlertDialogNegative"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/list_item_selector"
+                android:text="@string/cancel"
+                android:textColor="@color/color_252525"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_CACACA" />
+
+            <!--
+                 <View
+                android:id="@+id/vLgAlertDialogBtnSpace"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:visibility="visible" />
+            -->
+
+            <Button
+                android:id="@+id/btnLgAlertDialogPositive"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/list_item_selector"
+                android:text="@string/confirm"
+                android:textColor="@color/color_252525"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.chinacnit.elevatorguard.mobile.ui.view.CornerRelativeLayout>

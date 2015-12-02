@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_E7E7E7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <RelativeLayout
+        android:id="@+id/wb_date_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="@color/color_ffffff" >
+
+        <TextView
+            android:id="@+id/wb_company_lift_textview"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="维保公司"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+
+        <TextView
+            android:id="@+id/wb_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wb_company_lift_textview"
+            android:layout_alignBottom="@+id/wb_company_lift_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seventeen_dp"
+            android:text="xx维保公司"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EDEDED" />
+
+    <RelativeLayout
+        android:id="@+id/wb_name_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="@color/color_ffffff" >
+
+        <TextView
+            android:id="@+id/wy_company_lift_textview"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="物业公司"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+
+        <TextView
+            android:id="@+id/wy_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wy_company_lift_textview"
+            android:layout_alignBottom="@+id/wy_company_lift_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seventeen_dp"
+            android:text="xx维保公司"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EDEDED" />
+
+    <RelativeLayout
+        android:id="@+id/jf_hj_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="@color/color_ffffff" >
+
+        <TextView
+            android:id="@+id/brand_lift_textview"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="品牌"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/brand_lift_textview"
+            android:layout_alignBottom="@+id/brand_lift_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seventeen_dp"
+            android:text="日立"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EDEDED" />
+
+    <RelativeLayout
+        android:id="@+id/brake_gap_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_ffffff" >
+
+        <TextView
+            android:id="@+id/date_in_produced_lift_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="生产日期"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+
+        <TextView
+            android:id="@+id/date_in_produced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date_in_produced_lift_textview"
+            android:layout_alignBottom="@+id/date_in_produced_lift_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seventeen_dp"
+            android:text="2015.06.12"
+            android:textColor="@color/color_666666"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EDEDED" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_ffffff" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="电梯位置"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/twenty_dp" />
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/seventeen_dp"
+            android:textColor="@color/color_666666"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

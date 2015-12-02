@@ -1,0 +1,110 @@
+-dontwarn com.slidingmenu.**
+-keep class com.slidingmenu.** { *;}
+-keep interface com.slidingmenu.** { *; }
+-dontwarn org.apache.commons.**
+-keep class org.apache.commons.** { *;}
+-dontwarn com.nineoldandroids.**
+-keep class com.nineoldandroids.** { *;}
+-dontwarn android.support.**
+-keep class android.support.** { *;}
+-dontwarn android.os.**
+-keep class android.os.** { *;}
+-dontwarn com.chinacnit.elevatorguard.mobile.jsontoenum.**
+-keep class com.chinacnit.elevatorguard.mobile.jsontoenum.** { *;}
+#-dontwarn com.google.gson.**
+#-keep class com.google.gson.** { *;}
+-dontwarn org.apache.http.entity.mime.**
+-keep class org.apache.http.entity.mime.** { *;}
+
+-keep class com.chinacnit.elevatorguard.mobile.bean.**{ *; }
+-keep class com.chinacnit.elevatorguard.mobile.http.request.params.**{ *; }
+
+# For using GSON @Expose annotation
+-keepattributes *Annotation*
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; } 
+-keep class com.google.gson.** { *;}
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.antew.redditinpictures.library.imgur.** { *; }
+-keep class com.antew.redditinpictures.library.reddit.** { *; }
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep public abstract interface com.asqw.android.Listener{
+	public protected <methods>;
+}
+
+-keep public class com.asqw.android{
+	public void Start(java.lang.String);
+}
+
+# Explicitly preserve all serialization members. The Serializable interface
+# is only a marker interface, so it wouldn't save them.
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+-keep public class * implements java.io.Serializable {*;}
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.content.Context {
+   public void *(android.view.View);
+   public void *(android.view.MenuItem);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_5e5e5e" />
+    
+    <TextView 
+        android:id="@+id/tv_itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size10"
+        android:textSize="@dimen/size17"
+        android:layout_gravity="center"/>
+    
+      <View
+        android:layout_width="match_parent"
+        android:padding="@dimen/size3"
+        android:layout_height="1dp"
+        android:background="@color/div" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size10"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size17"
+            android:text="维保人"/>
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1px"/>
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:padding="@dimen/size3"
+        android:layout_height="1dp"
+        android:background="@color/div" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size10"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size17"
+            android:text="维保时间"/>
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1px"/>
+        <TextView 
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:padding="@dimen/size3"
+        android:layout_height="1dp"
+        android:background="@color/div" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size10"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size17"
+            android:text="状态"/>
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1px"/>
+        <TextView 
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:padding="@dimen/size3"
+        android:layout_height="1dp"
+        android:background="@color/div" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size17"
+        android:padding="@dimen/size10"
+        android:text="描述"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/abnormal_note_edittext_shape" >
+
+        <EditText
+            android:id="@+id/edt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:editable="false"
+            android:background="@color/color_ffffff"
+            android:gravity="top"
+            android:hint="@string/abnormal_note"
+            android:padding="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

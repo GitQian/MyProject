@@ -1,0 +1,107 @@
+<resources>
+
+    <string name="app_name">e电梯</string>
+    <string name="press_again_to_exit">再按一次退出.</string>
+    <string name="userid_empty_alarm">帐号不能为空!</string>
+    <string name="pwd_empty_alarm">密码不能为空!</string>
+    <string name="login_submit">登 录</string>
+    <string name="network_unavailable">网络不太好，请稍后重试</string>
+    <string name="http_request_error">服务器出错了，请稍后重试</string>
+    <string name="http_parse_error">服务器返回数据出错了，请稍后重试</string>
+    <string name="no_data">没有记录</string>
+    <string name="invaild_parms">发送参数出错</string>
+    <string name="loading">加载中...</string>
+    <string name="login_success">登录成功!</string>
+    <string name="login_fail">登录失败:</string>
+    <string name="abnormal_note">异常备注</string>
+    <string name="abnormal_note_submit">提交</string>
+    <string name="maintenance_time">维保时间</string>
+    <string name="maintenance_records">维保记录</string>
+    <string name="lift_list">电梯管理</string>
+    <string name="info_center">消息</string>
+    <string name="brake">制动器</string>
+    <string name="maintenance_task">维保任务</string>
+    <string name="lift_detail">电梯详情</string>
+    <string name="maintenance_detail">维保详情</string>
+    <string name="maintenance_person">维保人员</string>
+    <string name="role_name_quality">质监局</string>
+    <string name="role_name_inspectorate">监察局</string>
+    <string name="role_name_maintenanceadmin">维保管理员</string>
+    <string name="role_name_maintenanceworkers">维保工人</string>
+    <string name="role_name_propertycompany">物业公司</string>
+   <!--  <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">下拉刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">数据刷新中&#8230;</string>
+    <string name="pull_to_refresh_update_time_label" translatable="false">上次更新：</string>
+    <string name="pull_to_load_pull_label" translatable="false">上拉加载更多</string> -->
+    <string name="pull_to_load_release_label">松开立即加载</string>
+    <string name="pull_to_load_loading_label">正在加载&#8230;</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="wuye_company">物业公司</string>
+    <string name="weibao_company">维保公司</string>
+    <string name="weibao_company_details">维保公司详情</string>
+    <string name="wuye_company_details">物业公司详情</string>
+    <string name="maintenance_task_status_nomaintenance">尚未维保</string>
+    <string name="maintenance_task_status_maintenanceed">维保完成</string>
+    <string name="maintenance_task_status_maintenanceextension">维保延期</string>
+    <string name="settings">设置</string>
+    <string name="username">用户名</string>
+    <string name="nikname">昵称:</string>
+    <string name="gender">性别:</string>
+    <string name="cell_fhone_number">手机号:</string>
+    <string name="birthday ">生日:</string>
+    <string name="settings_tag">设置标签</string>
+    <string name="login_out">退出登录</string>
+    <string name="personal_information">个人信息</string>
+    <string name="no_nfc">没有发现NFC设备</string>
+    <string name="alarm">提示</string>
+    <string name="error">错误</string>
+    <string name="nfc_disabled">NFC没有启用,请到设置界面启用.</string>
+    <string name="no_bind_tag">没有绑定标签</string>
+    <string name="bind_tag_success">绑定成功</string>
+    <string name="bind_tag_fail">绑定失败</string>
+    <string name="maintenance_content_non_compliance">维保内容不符合规定</string>
+    <string name="item_binded_tag">此维保内容已经绑定了其他的标签</string>
+    <string name="tag_binded_item">此标签已绑定了其他的维保内容</string>
+    <string name="halfmonth_maintenance">半月维保</string>
+    <string name="quarter_maintenance">季度维保</string>
+    <string name="halfyear_maintenance">半年维保</string>
+    <string name="year_maintenance">年度维保</string>
+    <string name="weibaoitem_normal">正常</string>
+    <string name="weibaoitem_abnormal">异常</string>
+    <string name="cover_tag_alarm">此维保内容已经绑定了其他的标签, 确定要覆盖已绑定的标签吗?</string>
+    <string name="scan_tag_alarm_noitem">没有对应的维保项!</string>
+    <string name="scan_tag_alarm_already">此维保项已被维保过!</string>
+    <string name="scan_tag_alarm_cover">确定覆盖已扫描过标签的维保项吗?</string>
+    <string name="opeartion_success">操作成功!</string>
+    <string name="opeartion_fail">操作失败!</string>
+    <string name="input_abnomal_text">请输入异常备注信息</string>
+    <string name="no_done_maintenance_item">还有未完成的维保项!</string>
+	<string name="submit_maintenance_plan_alarm">确定提交整个维保任务吗?</string>
+	<string name="gender_male">男</string>
+	<string name="gender_female">女</string>
+	<string name="about_us">关于我们</string>
+	<string name="use_clauses">使用条款</string>
+	<string name="version_info">版本信息</string>
+	<string name="check_update">检查更新</string>
+	<string name="version_update">版本更新</string>
+    <string name="new_version">已是最新版本无需更新</string>
+    <string name="tip_from_system">系统提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="version_update_alarm_title">版本升级到 %s</string>
+    <string name="downloading">正在下载...</string>
+    <string name="download_error">下载失败!</string>
+    <string name="download_sucess">下载成功!</string>
+    <string name="download_cancel">下载取消!</string>
+    <string name="maintenance_task_no_start">当前日期不在计划维保时间段内,不能进行维保!</string>
+    <string name="alarm_no_repeat_bind_tag">无需重复绑定当前标签!</string>
+    <string name="enter_key_words">请输入关键字</string>
+	<string name="not_maintenance">尚未维保</string>
+    <string name="maintenance_finish">维保完成</string>
+    <string name="maintenance_delay">维保延期</string>   	
+</resources>

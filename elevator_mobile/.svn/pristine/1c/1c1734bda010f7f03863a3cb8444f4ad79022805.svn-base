@@ -1,0 +1,129 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="base_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="splash_bottom_copyright">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/forty_dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/ten_dp</item>
+        <item name="android:src">@drawable/splash_bottom_image</item>
+    </style>
+
+    <style name="splash_center_logo">
+        <item name="android:layout_width">@dimen/hundred_fifty_dp</item>
+        <item name="android:layout_height">@dimen/hundred_fifty_dp</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:src">@drawable/splash_logo</item>
+    </style>
+
+    <style name="splash_center_linearlayout" parent="@style/base_match_wrap">
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/thirty_dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="commmon_title_back_imageview">
+        <item name="android:layout_width">@dimen/twenty_dp</item>
+        <item name="android:layout_height">@dimen/twenty_dp</item>
+        <item name="android:layout_marginLeft">@dimen/ten_dp</item>
+        <item name="android:background">@drawable/back</item>
+    </style>
+
+    <style name="commmon_title_back_textview" parent="@style/base_wrap">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/ten_dp</item>
+        <item name="android:text">@string/abnormal_note</item>
+        <item name="android:textColor">@color/color_FEFFFE</item>
+        <item name="android:textSize">@dimen/twenty_sp</item>
+    </style>
+
+    <style name="commmon_title_search_button">
+        <item name="android:layout_width">@dimen/twenty_five_dp</item>
+        <item name="android:layout_height">@dimen/twenty_five_dp</item>
+        <item name="android:layout_marginRight">@dimen/thirty_dp</item>
+        <item name="android:background">@drawable/find</item>
+    </style>
+
+    <style name="commmon_title_submit_textview" parent="@style/base_wrap">
+        <item name="android:layout_marginRight">@dimen/ten_dp</item>
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:textSize">@dimen/twenty_sp</item>
+    </style>
+
+    <style name="commmon_title_wb_time_rl">
+        <item name="android:layout_width">@dimen/hundred_dp</item>
+        <item name="android:layout_height">@dimen/thirty_dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/twenty_dp</item>
+        <item name="android:background">@drawable/maintenance_date_background</item>
+    </style>
+
+    <style name="commmon_title_wb_time_textview" parent="@style/base_wrap">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/ten_dp</item>
+        <item name="android:text">@string/maintenance_time</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:textSize">@dimen/fifteen_dp</item>
+    </style>
+    <!-- machinroomdialog 机房 -->
+    <style name="custom_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/machine_room_dialog_background</item>
+    </style>
+
+    <!-- 个人信息相对布局样式 -->
+    <style name="personal_info_rl_head">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/hundred_thirty_five_dp</item>
+        <item name="android:background">@color/color_E7E7E7</item>
+    </style>
+
+    <!-- 个人信息相对布局样式 -->
+    <style name="personal_info_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fifty_dp</item>
+        <item name="android:background">@color/color_ffffff</item>
+    </style>
+
+    <!-- 个人信息text style -->
+    <style name="personal_info_textview" parent="@style/base_wrap">
+        <item name="android:textSize">@dimen/twenty_sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 版本信息 style -->
+    <style name="version_info_center_logo">
+        <item name="android:layout_width">@dimen/hundred_fifty_dp</item>
+        <item name="android:layout_height">@dimen/hundred_fifty_dp</item>
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:layout_marginTop">@dimen/hundred_twenty_dp</item>
+        <item name="android:src">@drawable/splash_logo</item>
+    </style>
+
+</resources>

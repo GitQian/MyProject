@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size50"
+    android:background="#2871d5" >
+
+    <LinearLayout
+        android:id="@+id/back_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal" 
+        android:clickable="true"
+        android:background="@drawable/state_transparent_gray_color_slct">
+
+        <Button style="@style/commmon_title_back_imageview" 
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/back_textview"
+            style="@style/commmon_title_back_textview"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commmon_title_center_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/twenty_sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/common_title_righttop_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <Button
+            android:id="@+id/search_button"
+            style="@style/commmon_title_search_button"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/common_title_submit_textview"
+            style="@style/commmon_title_submit_textview"
+            android:text="提交"
+            android:visibility="gone" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/wb_time_rl"
+            style="@style/commmon_title_wb_time_rl"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/wb_time_rl_textview"
+                style="@style/commmon_title_wb_time_textview" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

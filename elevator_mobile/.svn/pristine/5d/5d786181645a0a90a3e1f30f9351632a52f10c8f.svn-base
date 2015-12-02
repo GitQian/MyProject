@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/wb_name_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/state_white_gray_color_slct" 
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:gravity="center_vertical|left" >
+
+            <TextView
+                android:id="@+id/weibao_detail_list_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:text="轿门安全"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/seventeen_dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/size5"
+            android:gravity="center_vertical|right"
+            >
+            <TextView
+                android:id="@+id/weibao_detail_list_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size5"
+                android:text="尚未维保"
+                android:textSize="@dimen/seventeen_dp" />
+
+            <ImageView
+                android:id="@+id/weibao_detail_list_item_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/to_right"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

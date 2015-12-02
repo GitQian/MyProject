@@ -1,0 +1,260 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinacnit.elevatorguard.mobile"
+    android:versionCode="6"
+    android:versionName="1.0.5" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".application.ElevatorGuardApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.YTZT.Splash" >
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.ComponentActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 维保记录activity -->
+        <activity
+            android:name=".ui.activity.WeiBaoRecordsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 维保详情activity的listview的item对应的activity -->
+        <activity
+            android:name=".ui.activity.WeibaoItemDetailActivity_4_worker"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 电梯详情activity -->
+        <activity
+            android:name=".ui.activity.LiftDetailsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 电梯列表activity -->
+        <activity
+            android:name=".ui.activity.LiftListingActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 物业公司activity -->
+        <activity
+            android:name=".ui.activity.WuYeCompanyActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 物业公司详情activity -->
+        <activity
+            android:name=".ui.activity.WuYeCompanyDetailsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 维保公司详情activity -->
+        <activity
+            android:name=".ui.activity.WeiBaoCompanyDetailsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 维保公司activity -->
+        <activity
+            android:name=".ui.activity.WeiBaoCompanyActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 设置activity -->
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人信息activity -->
+        <activity
+            android:name=".ui.activity.PersonalInfoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 设置标签activity -->
+        <activity
+            android:name=".ui.activity.SettingsTagActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.VersionInfoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.AboutUsAndUseClausesActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.StartMaintenanceActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.MaintenanceTaskListActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.MaintenanceTaskHomeActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.MaintenancePersonListActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.InfoCenreActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.WeibaoRecordDetailActivity"    
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.ManagerEmployee"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.StartMaintenanceTaskDetailsActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SignActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:theme="@style/translucentDialogStyle" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- push service client -->
+        <receiver android:name="com.ztkj.service.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data
+                    android:path="com.ztkj.mhpapp"
+                    android:scheme="package" />
+            </intent-filter>
+            -->
+        </receiver>
+
+        <service
+            android:name="com.ztkj.service.YTZTService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.ztkj.service.PushInfo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucentDialogStyle" >
+        </activity>
+        <activity android:name=".ui.activity.MessageActivity"></activity>
+        <activity android:name=".ui.activity.MaintenanceTaskActivity"></activity>
+        <activity android:name=".ui.activity.WeiBaoRecordActivity"></activity>
+        <activity android:name=".ui.activity.WeiboItemDetailActivity_4manager"></activity>
+        <activity android:name=".ui.activity.AbnormalNoteActivityX"></activity>
+        <activity android:name=".ui.activity.MessageNetActivity"></activity>
+    </application>
+
+</manifest>

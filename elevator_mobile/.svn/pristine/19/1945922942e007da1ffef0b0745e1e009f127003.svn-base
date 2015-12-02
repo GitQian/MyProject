@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_E7E7E7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/WHITE" >
+
+        <ImageView
+            android:id="@+id/id_brake_maintenance_standard_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/brake_maintenance_standard" />
+
+        <TextView
+            android:id="@+id/id_brake_maintenance_standard_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/id_brake_maintenance_standard_image"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/id_brake_maintenance_standard_image"
+            android:text="维保标准"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/id_brake_maintenance_standard_text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/id_brake_maintenance_standard_text"
+            android:layout_below="@id/id_brake_maintenance_standard_text"
+            android:layout_marginTop="5dp"
+            android:text="清洁门窗好，照明正常" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/activity_brake_binding_tag"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/WHITE" >
+
+        <ImageView
+            android:id="@+id/id_brake_tag_position_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/brake_tag_position" />
+
+        <TextView
+            android:id="@+id/id_brake_tag_posiyion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/id_brake_tag_position_image"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/id_brake_tag_position_image"
+            android:text="绑定标签"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/brake_tag_id_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/id_brake_tag_posiyion_text"
+            android:layout_below="@id/id_brake_tag_posiyion_text"
+            android:layout_marginTop="5dp"
+            android:text="点击绑定" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/photograph" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/uploading_picture_rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/WHITE" >
+
+        <ImageView
+            android:id="@+id/id_brake_tag_position_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/photograph_picture" />
+
+        <TextView
+            android:id="@+id/id_brake_tag_posiyion_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/id_brake_tag_position_image1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/id_brake_tag_position_image1"
+            android:text="拍照"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/id_brake_tag_posiyion_text1"
+            android:layout_below="@id/id_brake_tag_posiyion_text1"
+            android:layout_marginTop="5dp"
+            android:text="拍照上传" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/photograph" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/brake_imageview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</LinearLayout>

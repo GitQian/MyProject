@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/state_white_gray_color_slct"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/div" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size15" >
+
+        <TextView
+            style="@style/tv555_16"
+            android:text="计划时间" />
+
+        <TextView
+            android:id="@+id/tvPlanTime"
+            style="@style/tv777"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/size10"
+        android:background="@color/div" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size15" >
+
+        <TextView
+            style="@style/tv555_16"
+            android:text="维保时间" />
+
+        <TextView
+            android:id="@+id/tvMaintenanceTime"
+            style="@style/tv777"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/size10"
+        android:background="@color/div" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size15" >
+
+        <TextView
+            style="@style/tv555_16"
+            android:text="状态" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/tv777"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/right_black"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/div" />
+
+</LinearLayout>

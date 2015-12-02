@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_192240" >
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/back_rl"
+            android:background="@drawable/login_username_bg_shape"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/find" />
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/search_image"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_key_words"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/WHITE"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/eighteen_sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.chinacnit.elevatorguard.mobile.ui.view.PullToRefreshLoadView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </com.chinacnit.elevatorguard.mobile.ui.view.PullToRefreshLoadView>
+
+</LinearLayout>

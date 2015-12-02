@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:background="#2871d5" >
+
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <Button style="@style/commmon_title_back_imageview" />
+
+            <TextView
+                android:id="@+id/back_textview"
+                style="@style/commmon_title_back_textview"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLock"
+            style="@style/tv555"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/img_locked"
+            android:gravity="center"
+            android:paddingRight="@dimen/size5"
+            android:text="点击解锁"
+            android:textColor="@color/text_click_wr"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_half_month"
+                android:text="半月保"
+                style="@style/tv_settag_xml"
+                android:textColor="@color/red_melon" />
+
+            <View
+                android:id="@+id/tv_half_month_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@color/div" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_half_jidu"
+                style="@style/tv_settag_xml"
+                android:text="季度保" />
+
+            <View
+                android:id="@+id/tv_half_jidu_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@color/div" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_half_year"
+                style="@style/tv_settag_xml"
+                android:text="半年保" />
+
+            <View
+                android:id="@+id/tv_half_year_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <View 
+            android:layout_marginTop="@dimen/size5"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/size1"
+            android:background="@color/div"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_year"
+                style="@style/tv_settag_xml"
+                android:text="年度保" />
+
+            <View
+                android:id="@+id/tv_year_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View 
+        android:layout_marginTop="@dimen/size20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/div"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

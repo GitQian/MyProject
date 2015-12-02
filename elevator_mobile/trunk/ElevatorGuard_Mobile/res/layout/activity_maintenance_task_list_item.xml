@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_192240"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/view_0"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:background="#5e5e5e" />
+
+        <ImageView
+            android:id="@+id/time_mark_imageview"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/view_0"
+            android:layout_marginLeft="92.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/checked_point" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/time_mark_imageview"
+            android:layout_marginLeft="100dp"
+            android:background="#5e5e5e" />
+
+        <LinearLayout
+            android:id="@+id/maintenance_task_list_item_bg"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/time_mark_imageview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-30dp"
+            android:layout_toRightOf="@id/time_mark_imageview"
+            android:background="@drawable/maintenance_name_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maintenance_task_list_item_location_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="middle"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="腾讯大厦1号梯"
+                android:textColor="@color/color_ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/maintenance_task_list_item_status"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="半月维保"
+                android:textColor="@color/color_ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/maintenance_task_list_item_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/view_1"
+            android:layout_alignTop="@id/time_mark_imageview"
+            android:layout_marginRight="14dp"
+            android:text="2015.05.01"
+            android:textColor="@color/color_ffffff" />
+
+        <TextView
+            android:id="@+id/maintenance_task_list_item_statusCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/maintenance_task_list_item_deadline"
+            android:layout_below="@+id/maintenance_task_list_item_deadline"
+            android:layout_marginTop="20dp"
+            android:text="尚未维保"
+            android:textColor="@color/WHITE" />
+
+    </RelativeLayout>
+
+</LinearLayout>

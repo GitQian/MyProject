@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_192240"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <ImageView style="@style/version_info_center_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前版本:"
+            android:textColor="@color/color_FEFFFE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/version_info_version_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.0"
+            android:textColor="@color/color_FEFFFE"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/version_info_check_update_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/bg_check_update_selector"
+        android:text="@string/check_update"
+        android:textColor="@color/WHITE"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="商巢互联网技术有限公司 版权所有"
+            android:textColor="@color/color_FEFFFE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="8dp"
+            android:text="Copyright 2015\nBiznest Internet Technology Co.,Ltd\nAll rights reserved"
+            android:textColor="@color/color_FEFFFE"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

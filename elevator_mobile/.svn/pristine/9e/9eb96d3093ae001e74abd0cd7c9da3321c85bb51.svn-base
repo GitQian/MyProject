@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_half_month"
+                style="@style/tv_settag_xml"
+                android:text="半月保"
+                android:textColor="@color/red_melon" />
+
+            <View
+                android:id="@+id/tv_half_month_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@color/div" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_half_jidu"
+                style="@style/tv_settag_xml"
+                android:text="季度保" />
+
+            <View
+                android:id="@+id/tv_half_jidu_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@color/div" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_half_year"
+                style="@style/tv_settag_xml"
+                android:text="半年保" />
+
+            <View
+                android:id="@+id/tv_half_year_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@color/div" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_year"
+                style="@style/tv_settag_xml"
+                android:text="年度保" />
+
+            <View
+                android:id="@+id/tv_year_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:background="@color/red_melon"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_marginTop="@dimen/size20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/size15"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

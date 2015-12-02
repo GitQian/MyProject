@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2871d5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/main_top_role_imageview"
+            android:layout_width="@dimen/size80"
+            android:layout_height="@dimen/size80"
+            android:layout_margin="@dimen/size10"
+            android:src="@drawable/main_top_role_icon_maintenanceworkers" />
+
+        <TextView
+            android:id="@+id/main_top_role_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size10"
+            android:text="维保工"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/textSize18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/div_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size20"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_elevator_management_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_center_elevator_management_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_elevator_management_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="电梯管理"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_data_statistics_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_center_data_statistics_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_data_statistics_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="数据统计"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/size20"
+        android:layout_marginTop="@dimen/size20"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_property_management_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_center_property_management_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_property_management_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="物业公司"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_maintenance_company_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/main_center_maintenance_company_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_maintenance_company_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="维保公司"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_staff_management_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/main_center_staff_management_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_staff_management_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="员工管理"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_maintenance_task_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/main_center_maintenance_task_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_maintenance_task_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="维保任务"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_center_more_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/main_center_more_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_center_more_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="#777"
+                android:textSize="@dimen/textSize14" />
+        </com.ztkj.componet.ButtonScaleAnim>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/div2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size2"
+        android:layout_marginTop="@dimen/size5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_bottom_message_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/state_msg_icon_slct" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size2"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@color/state_msg_textcolor_slct"
+                android:textSize="@dimen/textSize" />
+        </com.ztkj.componet.ButtonScaleAnim>
+
+        <com.ztkj.componet.ButtonScaleAnim
+            android:id="@+id/main_bottom_setting_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/state_settting_icon_slct" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size2"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@color/state_msg_textcolor_slct"
+                android:textSize="@dimen/textSize" />
+        </com.ztkj.componet.ButtonScaleAnim>
+    </LinearLayout>
+
+</LinearLayout>

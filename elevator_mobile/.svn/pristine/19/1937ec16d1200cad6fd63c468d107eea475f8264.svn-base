@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 维保工 维保任务 首页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  
+    
+    <com.ztkj.componet.JGoodListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#0000"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:drawSelectorOnTop="false"
+        android:divider="@null"
+        android:dividerHeight="@dimen/size10"
+        android:listSelector="#0000"/> 
+
+</LinearLayout>

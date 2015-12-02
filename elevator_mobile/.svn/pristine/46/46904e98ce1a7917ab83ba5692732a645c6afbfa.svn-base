@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/tv555_16"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/tv555_16"
+        android:ems="4"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size12"
+        android:paddingTop="@dimen/size12" />
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/tv555_16"
+        android:ems="7"
+        android:gravity="center" />
+
+</LinearLayout>

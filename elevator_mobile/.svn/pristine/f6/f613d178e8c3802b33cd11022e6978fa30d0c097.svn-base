@@ -1,0 +1,111 @@
+<resources>
+
+    <string name="app_version" translatable="false">1.0.0_0512</string>
+    <string name="app_name">eElevator</string>
+    <string name="press_again_to_exit">Again according to the exit.</string>
+    <string name="copyright" translatable="false">© Copyright 2015.China Information Technology, Inc.</string>
+    <string name="userid_empty_alarm">Account can not  be empty!</string>
+    <string name="pwd_empty_alarm">Password can not be empty!</string>
+    <string name="login_submit">Login</string>
+    <string name="network_unavailable">Network status is bad, please try again later</string>
+    <string name="http_request_error">erver error, please try again later</string>
+    <string name="http_parse_error">Server returned an error in the data, please try again later</string>
+    <string name="no_data">no data</string>
+    <string name="invaild_parms">Send the parameter error</string>
+    <string name="loading">loading...</string>
+    <string name="login_success">login success!</string>
+    <string name="login_fail">Logon failed:</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="abnormal_note">Abnormal note</string>
+    <string name="abnormal_note_submit">submit</string>
+    <string name="maintenance_time">Maintenance time</string>
+    <string name="maintenance_records">maintenance_records</string>
+    <string name="lift_list">lift_list</string>
+    <string name="info_center">information</string>
+    <string name="brake">brake</string>
+    <string name="maintenance_task">Maintenance task</string>
+    <string name="lift_detail">Details of the elevator</string>
+    <string name="maintenance_detail">Details of maintenance</string>
+    <string name="maintenance_person">Maintenance personnel</string>
+    <string name="role_name_quality">Quality</string>
+    <string name="role_name_inspectorate">Inspectorate</string>
+    <string name="role_name_maintenanceadmin">MaintenanceAdmin</string>
+    <string name="role_name_maintenanceworkers">MaintenanceWorkers</string>
+    <string name="role_name_propertycompany">PropertyCompany</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">Click the refresh</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">The drop-down refresh</string>
+    <string name="pull_to_refresh_release_label" translatable="false">Loosen can refresh</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">Data refresh the # 8230;</string>
+    <string name="pull_to_refresh_update_time_label" translatable="false">Last updated:</string>
+    <string name="pull_to_load_pull_label" translatable="false">The load more</string>
+    <string name="pull_to_load_release_label">Loosen the immediate loading</string>
+    <string name="pull_to_load_loading_label">Being loaded #8230;</string>
+    <string name="refresh_succeed">Refresh the success</string>
+    <string name="refresh_fail">Refresh the failure</string>
+    <string name="load_succeed">Load the success</string>
+    <string name="load_fail">Load failed</string>
+    <string name="wuye_company">WuYe Company</string>
+    <string name="weibao_company">WeiBao Company</string>
+    <string name="weibao_company_details">WeiBao CompanyDetails</string>
+    <string name="wuye_company_details">WuYe CompanyDetails</string>
+    <string name="maintenance_task_status_nomaintenance">Has not yet been maintenance</string>
+    <string name="maintenance_task_status_maintenanceed">Maintenance to complete</string>
+    <string name="maintenance_task_status_maintenanceextension">Maintenance postponed</string>
+    <string name="settings">Settings</string>
+    <string name="username">UserName</string>
+    <string name="nikname">NickName:</string>
+    <string name="gender">Gender:</string>
+    <string name="cell_fhone_number">Cell_Fhone_Number:</string>
+    <string name="birthday ">Birthday: </string>
+    <string name="settings_tag">Settings Tag</string>
+    <string name="login_out">Login Out</string>
+    <string name="personal_information">personal information</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="error">Error</string>
+    <string name="alarm">Prompt</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+    <string name="no_bind_tag">No binding TagID</string>
+    <string name="bind_tag_success">Binding success</string>
+    <string name="bind_tag_fail">Binding fail</string>
+    <string name="maintenance_content_non_compliance">Maintenance content does not conform to the rules</string>
+    <string name="item_binded_tag">The content of the maintenance has been binding the other label</string>
+    <string name="tag_binded_item">The label has been binding other maintenance content</string>
+    <string name="halfmonth_maintenance">And a half months maintenance</string>
+    <string name="not_maintenance">not_maintenance</string>
+    <string name="maintenance_finish">maintenance_finish</string>
+    <string name="maintenance_delay">maintenance_delay</string>
+    <string name="quarter_maintenance">Quarterly maintenance</string>
+    <string name="halfyear_maintenance">Half a year maintenance</string>
+    <string name="year_maintenance">year maintenance</string>
+    <string name="weibaoitem_normal">normal</string>
+    <string name="weibaoitem_abnormal">abnormal</string>
+    <string name="cover_tag_alarm">The maintenance content is bound to other labels, sure you want to overwrite have binding tag?</string>
+    <string name="scan_tag_alarm_noitem">There is no corresponding maintenance items!</string>
+    <string name="scan_tag_alarm_already">This maintenance has been maintenance!</string>
+    <string name="scan_tag_alarm_cover">Sure is scanned label of maintenance items cover?</string>
+    <string name="opeartion_success">Successful operation!</string>
+    <string name="opeartion_fail">operation failure!</string>
+    <string name="input_abnomal_text">Please enter the abnormal note information</string>
+    <string name="no_done_maintenance_item">And the maintenance items not completed!</string>
+    <string name="submit_maintenance_plan_alarm">Sure you want to submit the whole maintenance task?</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="about_us">About Us</string>
+    <string name="use_clauses">Use Clauses</string>
+    <string name="version_info">Version Information</string>
+    <string name="check_update">Check for updates</string>
+    <string name="version_update">version updating</string>
+    <string name="new_version">Is the latest version do not need to update</string>
+    <string name="tip_from_system">System Prompt</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="version_update_alarm_title">Version to upgrade to the %s</string>
+    <string name="downloading">downloading...</string>
+    <string name="download_error">download failed!</string>
+    <string name="download_sucess">download success!</string>
+    <string name="download_cancel">download cancelled!</string>
+    <string name="maintenance_task_no_start">The current date is not in the project maintenance period, cannot undertake maintenance!</string>
+    <string name="alarm_no_repeat_bind_tag">Do not need to repeat binding the current TAB!</string>
+    <string name="enter_key_words">Please enter a search phrase</string>
+
+</resources>
