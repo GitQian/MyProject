@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              android:background="@android:color/white">
+
+    <LinearLayout
+        	android:id="@+id/ll_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:src="@drawable/tab_icon_rescue_selector"
+                />
+        <TextView
+                android:id="@+id/tv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/tab_color_text_selector"
+                android:text="我"
+                android:textSize="13sp"/>
+    </LinearLayout>
+	<ImageView
+                android:id="@+id/iv_hongdian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:src="@mipmap/tab_hongdian"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/ll_icon"
+                />
+</RelativeLayout>
